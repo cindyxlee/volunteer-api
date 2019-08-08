@@ -1,34 +1,29 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Volunteer, Do Good</title>
+    <title>Do Good</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-</head>
-
-<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <section class="form-container">
-        <h1 class="title">Let's Do Some Good</h1>
-        <form class="search-form">
-            <label for="search-term" class="search-text">Search for volunteer opportunities near you</label>
-            <input type="text" class="search-box" id="js-search-loc" name="search-term"
-                placeholder="Enter address or zip" required>
-            <button type="submit"><i class="material-icons">search</i></button>
-        </form>
-        <p class="error-message"></p>
+      <h1 class="title">Let's Do Some Good</h1>
+      <form class="search-form">
+        <label for="search-term" class="search-text">Search for volunteer opportunities near you</label>
+        <input type="text" class="search-box" id="js-search-loc" name="search-term" placeholder="Enter address or zip" required>
+        <button class="search-button" type="submit">search</button>
+      </form>
+      <p class="error-message"></p>
     </section>
+    <footer>Powered by Eventful and Google Map APIs</footer>
     <div id="map"></div>
     <section id="search-results" class="hidden">
-        <ul id="results-list"></ul>
+      <ul id="results-list"></ul>
     </section>
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg2xuEAHZDpsZiUdIIoT46PEp7wa7WWdA&callback=initMap"
-        type="text/javascript"></script>
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDg2xuEAHZDpsZiUdIIoT46PEp7wa7WWdA&callback=initMap" type="text/javascript"></script>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
