@@ -1,7 +1,7 @@
 'use strict';
 
 let map;
-const apiURL = 'http://api.eventful.com/json/events/search?keywords=volunteer';
+const apiURL = 'https://api.eventful.com/json/events/search?keywords=volunteer';
 const apiKey = 'f2G3vcVXQmfbbTGG';
 
 function initMap() {
